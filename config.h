@@ -80,10 +80,10 @@ static const Rule rules[] = {
 static const char *menu[] = { "dmenu_run", "-i", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[9][ColFG], NULL };
 static const char *webb[] = { "dwb", NULL, "Dwb" };
 static const char *file[] = { "pcmanfm", NULL, "Pcmanfm" };
-static const char *term[] = { "termite", NULL,  };
-static const char   *mailcmd[] = { "termite", "--name=mutt", "-e", "mutt", NULL };
-static const char   *tmuxcmd[] = { "termite", "--name=tmux", "-e", "tmux", NULL };
-static const char   *yt[] = { "termite", "--name=YouTube", "-e", "youtube-viewer", NULL };
+static const char *term[] = { "urxvtc", NULL,  };
+static const char   *mailcmd[] = { "urxvtc", "--name=mutt", "-e", "mutt", NULL };
+static const char   *tmuxcmd[] = { "urxvtc", "--name=tmux", "-e", "tmux", NULL };
+static const char   *yt[] = { "urxvtc", "--name=YouTube", "-e", "youtube-viewer", NULL };
 static const char *fz[] = { "filezilla", NULL,  };
 
 
@@ -134,6 +134,10 @@ static Key keys[] = {
     TAGKEYS(            XK_4,       3)
     TAGKEYS(            XK_5,       4)
     TAGKEYS(            XK_6,       5)
+    TAGKEYS(            XK_7,       6)
+    TAGKEYS(            XK_8,       7)
+    TAGKEYS(            XK_9,       8)
+    TAGKEYS(            XK_0,       9)
 };
 
 static Button buttons[] = {

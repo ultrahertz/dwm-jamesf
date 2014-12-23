@@ -91,9 +91,9 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char  *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", colors[0][ColBG], "-nf", colors[0][ColFG], "-sb", colors[1][ColBG], "-sf", colors[1][ColFG], NULL };
-static const char   *termcmd[] = { "termite", NULL };
-static const char   *mailcmd[] = { "termite", "--name=mutt", "-e", "mutt", NULL };
-static const char   *tmuxcmd[] = { "termite", "--name=tmux", "-e", "tmux", NULL };
+static const char   *termcmd[] = { "urxvtc", NULL };
+static const char   *mailcmd[] = { "urxvtc", "--name=mutt", "-e", "mutt", NULL };
+static const char   *tmuxcmd[] = { "urxvtc", "--name=tmux", "-e", "tmux", NULL };
 static const char   *lockcmd[] = { "xautolock", "-locknow", NULL };
 
 static Key keys[] = {
